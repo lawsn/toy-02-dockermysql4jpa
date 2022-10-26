@@ -31,12 +31,11 @@ services:
       - ADMINER_DESIGN=hydra
       - ADMINER_PLUGINS=tables-filter tinymce
 
-  application:
-    container_name: app-simple
-    build: ../
-    restart: always
-    ports:
-      - '80:8080'
-
-    depends_on:
-      - database-mysql
+#  application:
+#   container_name: app-simple
+#   build: ./build/
+#   restart: always
+#   ports:
+#     - '80:8080'
+#   depends_on:
+#     - database-mysql
